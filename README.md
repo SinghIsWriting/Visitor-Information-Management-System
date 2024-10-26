@@ -55,7 +55,7 @@ Follow these steps to set up the project on your local machine or server.
 - Create a MySQL database for the project in `phpmyadmin`.
 - Create a table manually:
   ```sql
-    CREATE TABLE visitors (
+    CREATE TABLE visitor (
       sno INT AUTO_INCREMENT PRIMARY KEY,
       name VARCHAR(50),
       age INT,
