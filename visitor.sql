@@ -1,7 +1,7 @@
 -- SQL script to create visitors table and add sample data
 
 -- Create the visitors table
-CREATE TABLE visitors (
+CREATE TABLE visitor (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     age INT NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE visitors (
 );
 
 -- Insert sample data
-INSERT INTO visitors (name, age, gender, email, phone, address, visit_reason, other_info) 
+INSERT INTO visitor (name, age, gender, email, phone, address, visit_reason, other_info) 
 VALUES 
 ('John Doe', 25, 'Male', 'johndoe@example.com', '1234567890', '123 Elm Street', 'Business Meeting', 'No other information'),
 ('Jane Smith', 30, 'Female', 'janesmith@example.com', '0987654321', '456 Oak Avenue', 'Conference', 'Requested access to conference room');
