@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: border-box;
+    font-family: "Sriracha", cursive;
+}
+img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+.container{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light background with transparency */
+    backdrop-filter: blur(15px) saturate(180%);  /* Glass effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Soft shadow for 3D effect */
+}
+h1{
+    color: #A33133;
+    text-align: center;
+}
+span{
+    color: gray;
+    text-align: center;
+}
+#success{
+    font-family: "Sriracha", cursive;
+    color: green;
+}
+p{
+    font-size: 0.9rem;
+}
+.container form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+label{
+    display: none;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+input, textarea, select{
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #A33133;
+    outline: none;
+    background-color: #ffffff00;
+    color: black;
+    font-size: 1rem;
+    caret-color: #A33133;
+}
+select{
+    color: gray;
+}
+input:focus,
+textarea:focus,
+select:focus{
+    outline: none;
+    border-bottom: 3px solid #A33133;
+}
+#submit{
+    width: 30%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    align-self: center;
+    background-color: white;
+    color: #A33133;
+    cursor: pointer;
+    transition: border-radius 0.3s ease, border 0.1s ease, border-bottom 0.5s ease;
+}
+#submit:hover{
+    border-bottom: none;
+    border-radius: 20px;
+}
+#success{
+    color: green;
+}
+#error{
+    color: red;
+}
+
+.visitors{
+    width: 90%;
+    height: max-content;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    color: brown;
+    overflow-x: auto;
+    position: relative;
+    top: 2rem;
+    z-index: 1;
+}
+/* Table styling */
+table {
+    width: 100%;
+    min-width: 1200px;
+    border-collapse: collapse;
+    font-family: "Roboto", sans-serif;
+    background: #f5f7fa;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header */
+thead {
+    background-color: #A33133;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Table rows and columns */
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 0.9rem;
+}
+
+/* Alternate row colors */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+    background-color: #f1f3f8;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+}
+@media (max-width: 380px) {
+    h1{
+        font-size: 1.5em;
+    }
+}
